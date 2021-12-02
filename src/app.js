@@ -15,7 +15,12 @@ app.get('/webhook', (req, res)=> {
 app.post('/webhook', (req, res)=> {
   console.log("body=========>", req.body)
   console.log("data=========>", req.body.data)
+  console.log("id with body=>data =========>", req.body.data.id)
   console.log("object=========>", req.body.object)
-  console.log("status=========>", req.body.object.status)
+
+  console.log("status with body =========>", req.body.status)
+  console.log("status with data =========>", req.body.data.status)
+  console.log("status with data=>object =========>", req.body.data.object.status)
+  console.log("status with object =========>", req.body.object.status)
 })
 module.exports = app
