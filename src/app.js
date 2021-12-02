@@ -18,6 +18,7 @@ app.post('/webhook', (req, res)=> {
 
   console.log("status with data=>object =========>", req.body.data.object.status)
   console.log("plan with data=>object =========>", req.body.data.object.plan)
+  console.log("items with data=>object =========>", req.body.data.object.items)
   console.log("subscription with data=>object =========>", req.body.data.object.id)
   console.log("customer with data=>object =========>", req.body.data.object.customer)
 
